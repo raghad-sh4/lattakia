@@ -1,12 +1,12 @@
 <?php
 
 namespace App\Models;
-
+use App\Traits\Trans;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Product extends Model
 {
-    use HasFactory;
+    use HasFactory, Trans;
     protected $guarded=[];
 
     function category(){
